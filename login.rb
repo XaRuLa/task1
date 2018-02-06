@@ -2,7 +2,7 @@ require 'json'
 
 puts "Welcome to Book Store"
 
-file = File.read('/home/typing/intern/firstday/file.json')
+file = File.read('/home/typing/intern/firstask/task1/file.json')
 data_hash = JSON.parse(file)
 
 #detail data wak check
@@ -58,7 +58,7 @@ if $addmorebook == "Y"
       "User" => $user,
     
       }
-      File.open("/home/typing/intern/firstday/databuku.json","w") do |f|
+      File.open("/home/typing/intern/firstask/task1/databuku.json","w") do |f|
       f.write(JSON.pretty_generate(databuku))
       end
   end
@@ -83,7 +83,7 @@ print "View Book ? (Y/N) : "
 $viewmorebook = gets.chomp
 if $viewmorebook == "Y"
  begin
-    file = File.read('/home/typing/intern/firstday/databuku.json')
+    file = File.read('/home/typing/intern/firstask/task1/databuku.json')
     data_hash = JSON.parse(file)
 
     #detail data wak check

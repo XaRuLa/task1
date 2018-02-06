@@ -41,7 +41,7 @@ def funcjson
     "Username" => $username,
     "Password" => $password
     }
-    File.open("/home/typing/intern/firstday/file.json","w") do |f|
+    File.open("/home/typing/intern/firstask/task1/file.json","w") do |f|
     f.write(JSON.pretty_generate(sipedata))
     end
 end
