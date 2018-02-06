@@ -3,11 +3,11 @@ require 'json'
 
 #get username
 print "Enter your name : "
-name = gets
+name = gets.chomp
 
 #Welcome user
 puts "Hai " + name + "\nHow are you ?"
-situasion = gets
+situasion = gets.chomp
 
 #Store infomations into json file
 puts "\nPlease enter creadential below : "
